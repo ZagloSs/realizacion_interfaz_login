@@ -1,4 +1,4 @@
-package com.zagloss.firstdesign;
+package com.mcas2.firstdesign;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.mcas2.firstdesign", appContext.getPackageName());
+        assertEquals("com.zagloss.firstdesign", appContext.getPackageName());
     }
 }

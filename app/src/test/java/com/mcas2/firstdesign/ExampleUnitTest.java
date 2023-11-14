@@ -1,4 +1,4 @@
-package com.zagloss.firstdesign;
+package com.mcas2.firstdesign;
 
 import org.junit.Test;
 

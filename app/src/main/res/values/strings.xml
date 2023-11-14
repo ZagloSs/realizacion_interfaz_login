@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Hikers</string>
-    <string name="login_button">Entrar</string>
-    <string name="register_button">Registrarse</string>
-    <string name="watermark">Hikers by Mario Castro</string>
+    <string name="login_button">Log in</string>
+    <string name="register_button">Register</string>
+    <string name="watermark">Hikers by Carlos Díez</string>
+    <string name="rm">Remember me</string>
 </resources>

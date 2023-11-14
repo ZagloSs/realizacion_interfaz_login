@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login">
+    tools:context=".Register ">
 
     <ImageView
         android:id="@+id/logoLogin"
@@ -30,7 +30,7 @@
         android:layout_marginTop="30dp"
         android:fontFamily="@font/classicaldiary"
         android:textSize="40sp"
-      />
+        />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/usernameInputLogin"
@@ -41,14 +41,14 @@
         app:layout_constraintEnd_toEndOf="@id/loginGLV2"
         android:layout_marginTop="10dp"
         app:startIconDrawable="@drawable/ic_persona"
-      >
+        >
 
-      <EditText
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:hint="Username"
-          android:inputType="textPersonName"
-        />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:inputType="textPersonName"
+            />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -73,47 +73,49 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <TextView
-        android:id="@+id/forgotPasswordText"
-        android:layout_width="wrap_content"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/confirmPasswordInputLogin"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Forgot you password?"
-        app:layout_constraintEnd_toStartOf="@+id/loginGLV2"
-        app:layout_constraintTop_toBottomOf="@id/passwordInputLogin" />
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="@id/loginGLV2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/loginGLV1"
+        app:layout_constraintTop_toBottomOf="@id/usernameInputLogin"
+        app:passwordToggleEnabled="true"
+        app:startIconDrawable="@drawable/ic_llave">
 
-    <TextView
-        android:id="@+id/Register"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Do not have an account? Create one"
-        app:layout_constraintEnd_toStartOf="@+id/loginGLV2"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="@+id/loginGLV1"
-        app:layout_constraintTop_toBottomOf="@+id/loginButton"
-        android:onClick="openRegister"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm password"
+            android:inputType="textPassword" />
 
-    <CheckBox
-        android:id="@+id/checkremember"
-        android:layout_width="140dp"
-        android:layout_height="21dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/rm"
-        app:layout_constraintStart_toStartOf="@+id/loginGLV1"
-        app:layout_constraintTop_toBottomOf="@id/passwordInputLogin" />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/loginButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/forgotPasswordText"
-        app:layout_constraintStart_toStartOf="@id/loginGLV1"
-        app:layout_constraintEnd_toEndOf="@id/loginGLV2"
-        android:layout_marginTop="20dp"
-        android:text="@string/login_button"
+        android:layout_marginTop="24dp"
         android:onClick="openMain"
-        />
+        android:text="@string/register_button"
+        app:layout_constraintEnd_toEndOf="@id/loginGLV2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/loginGLV1"
+        app:layout_constraintTop_toBottomOf="@+id/confirmPasswordInputLogin" />
+
+    <TextView
+        android:id="@+id/Register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="openLogin"
+        android:text="Already have an account? Log in"
+        app:layout_constraintEnd_toStartOf="@+id/loginGLV2"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/loginGLV1"
+        app:layout_constraintTop_toBottomOf="@+id/loginButton" />
 
     <TextView
         android:id="@+id/watermark"
@@ -140,4 +142,4 @@
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.92" />
 
-  </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
