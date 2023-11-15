@@ -41,6 +41,8 @@
         app:layout_constraintEnd_toEndOf="@id/loginGLV2"
         android:layout_marginTop="10dp"
         app:startIconDrawable="@drawable/ic_persona"
+        app:startIconTint="@color/verdebtn"
+
       >
 
       <EditText
@@ -62,6 +64,7 @@
         android:layout_marginTop="10dp"
         app:startIconDrawable="@drawable/ic_llave"
         app:passwordToggleEnabled="true"
+        app:startIconTint="@color/verdebtn"
         >
 
         <EditText
@@ -79,6 +82,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="Forgot you password?"
+        android:textColor="@color/verdebtn"
         app:layout_constraintEnd_toStartOf="@+id/loginGLV2"
         app:layout_constraintTop_toBottomOf="@id/passwordInputLogin" />
 

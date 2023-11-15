@@ -41,6 +41,7 @@
         app:layout_constraintEnd_toEndOf="@id/loginGLV2"
         android:layout_marginTop="10dp"
         app:startIconDrawable="@drawable/ic_persona"
+        app:startIconTint="@color/verdebtn"
         >
 
         <EditText
@@ -62,6 +63,7 @@
         android:layout_marginTop="10dp"
         app:startIconDrawable="@drawable/ic_llave"
         app:passwordToggleEnabled="true"
+        app:startIconTint="@color/verdebtn"
         >
 
         <EditText
@@ -83,7 +85,9 @@
         app:layout_constraintStart_toStartOf="@id/loginGLV1"
         app:layout_constraintTop_toBottomOf="@id/usernameInputLogin"
         app:passwordToggleEnabled="true"
-        app:startIconDrawable="@drawable/ic_llave">
+        app:startIconDrawable="@drawable/ic_llave"
+        app:startIconTint="@color/verdebtn">
+
 
         <EditText
             android:layout_width="match_parent"
